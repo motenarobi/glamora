@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+    <link rel="stylesheet" href="../css/product.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <span>GLAMORA</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/about.html">About</a></li>
+                <li><a href="../html/products.html">Products</a></li>
+                <li><a href="../html/cart.html">Cart</a></li>
+                <li><a href="../html/contact.html">Contacts</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+             <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h2> <br>GLOW LIKE  <br> NEVER BEFORE!</h2>
+        
+        <p class="hero-subtitle">Discover your signature  beauty with our luxury collection</p>
+        <a href="../html/products.html" class="cta-button">SHOP NOW</a>
+        </div>
+        
+    </section>
+
+   <!--products page-->
+ <div class="header">
+        <div class="search-bar">
+            <input type="text" placeholder="Search products...">
+            <button>Search</button>
+        </div>
+        
+    </div>
+    
+    <div class="nav-tabs">
+        <button class="active" data-category="all">All Products</button>
+        <button data-category="face">Face</button>
+        <button data-category="eyes">Eyes</button>
+        <button data-category="lips">Lips</button>
+        <button data-category="skincare">Skincare</button>
+        <button data-category="tools">Tools & Brushes</button>
+    </div>
+    
+    <div class="products-container" id="products-container">
+        <!-- Products will be loaded here -->
+    </div>
+    
+    <div class="modal" id="product-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-content">
+                <!-- Modal content will be loaded here -->
+            </div>
+        </div>
+    </div>
+     <!--footer-->
+    <footer>
+        <div  class="glamora-footer">
+        <div class="footer-container">
+        <!-- Logo & Brand Info -->
+        <div class="footer-brand">
+            <h2>Glamora</h2>
+            <p>Unlock your beauty potential with premium cosmetics.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/products.html">Products</a></li>
+                <li><a href="../html/about.html">About Us</a></li>
+                <li><a href="../html/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    
+
+        <!-- Social Media Links -->
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://instagram.com/glamora" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com/glamora" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/glamora" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://pinterest.com/glamora" target="_blank" aria-label="Pinterest">
+                    <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a href="https://youtube.com/glamora" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://tiktok.com/@glamora" target="_blank" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+
+       
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2023 Glamora. All rights reserved. | <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms</a></p>
+
+        </div>
+        </div>
+    </footer>      
+
+
+    <script src="../js/product.js"></script>
+
+</body>
+</html>
+
+       

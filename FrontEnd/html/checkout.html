@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Glamora Beauty</title>
+    <link rel="stylesheet" href="../css/checkout.css">
+</head>
+<body>
+    <header class="checkout-header">
+        <div class="container">
+            <h1>Complete Your Beauty Journey</h1>
+            <p>Finalize your order with secure checkout</p>
+        </div>
+    </header>
+
+    <main class="checkout-container">
+        <div class="container">
+            <!-- Checkout Progress Bar -->
+            <div class="checkout-progress">
+                <div class="progress-step active">
+                    <span>1</span>
+                    <p>Shipping</p>
+                </div>
+                <div class="progress-step">
+                    <span>2</span>
+                    <p>Payment</p>
+                </div>
+                <div class="progress-step">
+                    <span>3</span>
+                    <p>Confirmation</p>
+                </div>
+            </div>
+
+            <div class="checkout-grid">
+                <!-- Left Column - Shipping/Payment Forms -->
+                <section class="checkout-form">
+                    <h2><i class="icon-truck"></i> Shipping Information</h2>
+                    <form id="shipping-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Street Address</label>
+                            <input type="text" id="address" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="zip">Postal Code</label>
+                                <input type="text" id="zip" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Delivery Notes (Optional)</label>
+                            <textarea id="notes" rows="3"></textarea>
+                        </div>
+
+                        <h2><i class="icon-credit-card"></i> Payment Method</h2>
+                        <div class="payment-methods">
+                            <div class="payment-option active">
+                                <input type="radio" id="mpesa" name="payment" checked>
+                                <label for="mpesa">
+                                    <img src="../images/mpesa.png" alt="M-Pesa">
+                                    <a href="../html/mpesa.html">Pay via M-pesa</a>
+                                </label>
+                                
+                            </div>
+                            <div class="payment-option">
+                                <input type="radio" id="card" name="payment">
+                                <label for="card">
+                                    <img src="../images/card.png" alt="Credit Card">
+                                    <span>Credit/Debit Card</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Card Details (Hidden by default) -->
+                        <div class="card-details" id="card-details">
+                            <div class="form-group">
+                                <label for="card-number">Card Number</label>
+                                <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="expiry">Expiry Date</label>
+                                    <input type="text" id="expiry" placeholder="MM/YY">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" placeholder="123">
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="place-order-btn">Place Your Order</button>
+                    </form>
+                </section>
+
+                <!-- Right Column - Order Summary -->
+                <aside class="order-summary">
+                    <h2>Your Order</h2>
+                    <div class="order-items" id="order-items">
+                        <!-- Filled by JavaScript -->
+                    </div>
+
+                    <div class="summary-totals">
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span id="checkout-subtotal">KSh 0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Delivery</span>
+                            <span id="checkout-delivery">KSh 200.00</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span id="checkout-total">KSh 200.00</span>
+                        </div>
+                    </div>
+
+                    <div class="secure-checkout">
+                        <img src="../images/out.png" alt="Secure Checkout">
+                        <p>100% Secure Checkout</p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+   
+
+    <script src="../js/checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation | Glamora</title>
+    <link rel="stylesheet" href="../css/confirmation.css">
+</head>
+<body>
+    <header>
+        <!-- Your existing header/navigation -->
+    </header>
+
+    <main class="confirmation-container">
+        <div class="confirmation-card">
+            <div class="confirmation-header">
+                <svg class="confirmation-icon" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+                <h1>Order Confirmed!</h1>
+                <p>Thank you for your purchase</p>
+            </div>
+
+            <div class="order-details">
+                <h2>Order #<span id="order-id">GLAMORA-12345</span></h2>
+                <p>Estimated delivery: <strong id="delivery-date">June 10, 2025</strong></p>
+                
+                <div class="summary">
+                    <h3>Order Summary</h3>
+                    <div id="order-items">
+                        <!-- Dynamically inserted by JavaScript -->
+                    </div>
+                    <div class="order-totals">
+                        <p>Subtotal: <span id="confirmation-subtotal">KSh 0.00</span></p>
+                        <p>Delivery: <span id="confirmation-delivery">KSh 200.00</span></p>
+                        <p class="total">Total: <span id="confirmation-total">KSh 0.00</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="customer-actions">
+                <a href="../html/products.html" class="btn">Continue Shopping</a>
+                <a href="#" class="btn secondary">Track Order</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Your existing footer -->
+    </footer>
+
+    <script src="../js/confirmation.js"></script>
+</body>
+</html>
+
+
+
+
+
